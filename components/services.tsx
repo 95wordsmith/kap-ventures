@@ -61,17 +61,17 @@ const Services = () => {
   return (
     <div className="py-16">
       <h2 className="text-sm text-primary tracking-widest pb-4">WHAT WE'RE OFFERING</h2>
-      <h1 className="text-3xl font-semibold tracking-wide text-secondary pb-12 ">Services We Provide</h1>
+      <h1 className="text-3xl font-semibold tracking-wide text-secondary pb-8 ">Services We Provide</h1>
       <div className="grid lg:grid-cols-2 grid-cols-1  xl:grid-cols-3 gap-8">
         {servicesData.map((service) => (
-          <div className="flex border  flex-col shadow-md rounded-sm justify-between ">
+          <div key={service.title} className="flex border  flex-col shadow-md rounded-sm justify-between ">
             <div className=" flex-1  ">
-              <div className="bg-primary text-white tracking-wide items-center space-x-4  font-bold  uppercase text-2xl  flex p-4">
-                <div className="bg-gray-50 rounded-full p-4">
+              <div className="bg-primary text-gray-50 tracking-wider items-center space-x-4  font-semibold  uppercase text-xl  flex p-4">
+                <div className="bg-gray-100 rounded-full p-4">
                   <Image
                     src={service.icon}
-                    width={50}
-                    height={50}
+                    width={40}
+                    height={40}
                     alt={service.title}
                   />
                 </div>

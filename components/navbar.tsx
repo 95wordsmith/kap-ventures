@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
 const Navbar = () => {
   const pathname = usePathname()
-  console.log(pathname)
 
   const navElements = [
     { name: "Home", href: "/" },
