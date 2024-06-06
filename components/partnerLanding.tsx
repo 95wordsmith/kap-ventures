@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const PartnersLanding = () => {
   return ( 
@@ -21,12 +23,16 @@ const PartnersLanding = () => {
       </div>
 
       </div>
-      <div>
-        <div className="w-full h-24 bg-primary">
-          <Button>Meet the Rest of the Team</Button>
+      <div className="flex flex-col my-auto gap-8">
+        <div className="w-full flex justify-between  p-8 items-center shadow-md shadow-gray-400  bg-primary">
+          <Image  src={'/team.png'} alt="team" width={80} height={70}/>
+          <Link href={'/about'} className={cn('font-medium rounded-none  hover:text-secondary hover:scale-110 hover:transition   text-lg text-gray-100 ')}>Meet the Rest of the Team</Link>
         </div>
-        <div className="w-full h-24 bg-secondary">
-          <Button>Contact </Button>
+        <div className="w-full  bg-secondary shadow-md shadow-gray-400 flex justify-between  p-8 items-center  ">
+        <Image src={'/contact.png'} alt="contact" width={80} height={70}/>
+
+        <Link href={'/contact'}  className={cn('font-medium rounded-none hover:text-primary hover:scale-110 hover:transition   text-lg text-gray-100 ')}>Contact Us</Link>
+
         </div>
       </div>
     </div>

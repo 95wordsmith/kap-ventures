@@ -46,7 +46,7 @@ const BlogLanding = () => {
       <h2 className="text-sm text-primary tracking-widest pb-4">NEWS AND UPDATES</h2>
       <h1 className="text-3xl font-semibold tracking-wide text-secondary pb-8 ">Top News For the Week</h1>
 
-      <div className="grid lg:grid-cols-3 sm:grid-cols-2  xl:grid-cols-4  sm:gap-4 md:gap-8 ">
+      <div className="sm:grid lg:grid-cols-3 flex flex-col gap-8 sm:grid-cols-2  xl:grid-cols-4 sm:gap-4 md:gap-8 ">
         {blogPosts.map((blog) => {
           return (
             <div key={blog.title}>
