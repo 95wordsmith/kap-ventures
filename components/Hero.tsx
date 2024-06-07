@@ -29,7 +29,7 @@ const Hero = () => {
       <div className="xl:3/5 xl:flex-1 pl-8 sm:pl-12 md:pl-16 lg:pl-24 xl:pl-0 ">
         <Image
           className="rounded-r-full"
-          src={"/hero-image.jpg "}
+          src={"/heroimage.jpg"}
           width={1000}
           height={1500}
           alt="image"
