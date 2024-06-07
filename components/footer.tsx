@@ -42,7 +42,7 @@ const Footer = () => {
         {/* 1st row */}
         <Image src={"/logo.png"} width={45} height={45} alt="logo" />
         <p className="text-primary text-base font-semibold">KAP </p>
-        <p className="text-secondary font-semibold">CHARTED ACCOUNTANTS</p>
+        <p className="text-secondary font-semibold">CHARTERED ACCOUNTANTS</p>
         <ul className="flex gap-4">
           {socials.map(social=>(
             <a key={social.link} href={social.link} target="_blank">{social.icon}</a>

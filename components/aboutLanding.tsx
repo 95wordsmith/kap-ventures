@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
+import { Import } from "lucide-react";
+import Link from "next/link"; 
 const AboutLanding = () => {
   const values = ['We act with integrity','We act independently','We work as a team','We build on trust']
   return (
@@ -64,8 +66,13 @@ const AboutLanding = () => {
             </div>
           ))}
           </div>
-
-          <Button variant={'ghost'} className={cn('rounded-none hover:bg-primary-light hover:text-gray-600 text-lg font-medium text-secondary self-end')}>Learn More</Button>
+          <Link href={'/about'}
+          className={cn(
+            "text-secondary font-medium  hover:scale-105 py-2 mr-4 px-4 text-xl transition  self-end rounded-none"
+          )}
+        >
+          Learn More
+        </Link>
     
         </div>
         <div className=" w-full">

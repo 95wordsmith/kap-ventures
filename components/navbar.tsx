@@ -19,7 +19,7 @@ const Navbar = () => {
         <Image src="/logo.png" width={50} height={50} alt="logo" />
         <div className=" text-sm leading-4 tracking-normal md:tracking-widest text-primary font-bold my-auto">
           <h1>KAP</h1>
-          <h1 className="text-secondary">CHARTED ACCOUNTANTS</h1>
+          <h1 className="text-secondary">CHARTERED ACCOUNTANTS</h1>
         </div>
       </div>
       <nav>
