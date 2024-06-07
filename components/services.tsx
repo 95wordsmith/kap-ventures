@@ -80,7 +80,7 @@ const Services = () => {
 
               <div className="flex flex-col gap-4 px-12 py-4 ">
                 {service.description.map((desc) => (
-                  <div className="flex space-x-6">
+                  <div key={desc} className="flex space-x-6">
                     <Check className="stroke-secondary" />
                     <p className="text-base text-secondary font-semibold">
                       {desc}
